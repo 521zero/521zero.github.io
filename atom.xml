@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://521zero.github.io/"/>
-  <updated>2019-09-23T11:35:13.363Z</updated>
+  <updated>2019-09-23T15:17:19.603Z</updated>
   <id>https://521zero.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>第一篇博客</title>
-    <link href="https://521zero.github.io/2019/09/23/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2.html"/>
-    <id>https://521zero.github.io/2019/09/23/第一篇博客.html</id>
-    <published>2019-09-23T09:30:00.000Z</published>
-    <updated>2019-09-23T11:35:13.363Z</updated>
+    <title>第二篇博客</title>
+    <link href="https://521zero.github.io/2019/09/23/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2.html"/>
+    <id>https://521zero.github.io/2019/09/23/第二篇博客.html</id>
+    <published>2019-09-23T15:05:54.000Z</published>
+    <updated>2019-09-23T15:17:19.603Z</updated>
     
     <summary type="html">
     
@@ -35,18 +35,28 @@
     
     </summary>
     
-      <category term="develop" scheme="https://521zero.github.io/categories/develop/"/>
     
-      <category term="test" scheme="https://521zero.github.io/categories/develop/test/"/>
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://521zero.github.io/2019/09/23/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2.html"/>
+    <id>https://521zero.github.io/2019/09/23/第一篇博客.html</id>
+    <published>2019-09-23T07:34:04.330Z</published>
+    <updated>2019-09-23T15:08:07.709Z</updated>
     
+    <summary type="html">
     
-      <category term="linux" scheme="https://521zero.github.io/tags/linux/"/>
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;
+        
+      
     
-      <category term="os" scheme="https://521zero.github.io/tags/os/"/>
+    </summary>
     
-      <category term="java" scheme="https://521zero.github.io/tags/java/"/>
-    
-      <category term="python" scheme="https://521zero.github.io/tags/python/"/>
     
   </entry>
   
