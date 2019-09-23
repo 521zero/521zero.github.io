@@ -6,8 +6,18 @@
     <content type="text"><![CDATA[代码 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495let fs = require('fs'), path = require('path'), exportsOBJ = &#123;&#125;;//=&gt;根据后缀名返回编码格式:UTF8/NULLfunction suffixHandle(pathname) &#123; let suffixREG = /\.([0-9a-zA-Z]+)$/, suffix = suffixREG.test(pathname) ? suffixREG.exec(pathname)[1] : '', encoding = 'utf8'; /^(PNG|GIF|JPG|JPEG|WEBP|BMP|ICO|SVG|MP3|MP4|WAV|OGG|M3U8)$/i.test(suffix) ? encoding = null : null; return encoding;&#125;//=&gt;READ-FILE/READ-DIR/MK-DIR/RM-DIR/UN-LINK['readFile', 'readdir', 'mkdir', 'rmdir', 'unlink'].forEach(item =&gt; &#123; exportsOBJ[item] = function anonymous(pathname) &#123; pathname = path.resolve(pathname); return new Promise((resolve, reject) =&gt; &#123; let encoding = suffixHandle(pathname), callback = (err, result) =&gt; &#123; if (err !== null) &#123; reject(err); return; &#125; resolve(result); &#125;; if (item !== 'readFile') &#123; encoding = callback; callback = null; &#125; fs[item](pathname, encoding, callback); &#125;); &#125;&#125;);//=&gt;WRITE-FILE / APPEND-FILE['writeFile', 'appendFile'].forEach(item =&gt; &#123; exportsOBJ[item] = function anonymous(pathname, content) &#123; pathname = path.resolve(pathname); //=&gt;如果是JSON对象,我们转化为JSON字符串 content !== null &amp;&amp; typeof content === 'object' ? content = JSON.stringify(content) : null; typeof content !== 'string' ? content += '' : null; return new Promise((resolve, reject) =&gt; &#123; let encoding = suffixHandle(pathname), callback = (err, result) =&gt; &#123; if (err !== null) &#123; reject(err); return; &#125; resolve(result); &#125;; fs[item](pathname, content, encoding, callback); &#125;); &#125;&#125;);//=&gt;COPY-FILEexportsOBJ['copyFile'] = function anonymous(pathname1, pathname2) &#123; pathname1 = path.resolve(pathname1); pathname2 = path.resolve(pathname2); return new Promise((resolve, reject) =&gt; &#123; fs['copyFile'](pathname1, pathname2, err =&gt; &#123; if (err !== null) &#123; reject(err); return; &#125; resolve(); &#125;); &#125;);&#125;;/* function readFile(pathname) &#123; //=&gt;富媒体资源在获取内容的时候不能使用UTF8编码格式 //获取文件的后缀名 let suffixREG = /\.([0-9a-zA-Z]+)$/, suffix = suffixREG.test(pathname) ? suffixREG.exec(pathname)[1] : '', encoding = 'utf8'; /^(PNG|GIF|JPG|JPEG|WEBP|BMP|ICO|SVG|MP3|MP4|WAV|OGG|M3U8)$/i.test(suffix) ? encoding = null : null; //=&gt;用户调用的时候，传递的PATH-NAME都以项目根目录作为参照（执行JS也是在根目录执行），用户只需要把读取文件，相对根目录的路径和名称传递进来即可 =&gt;获取的是绝对路径 pathname = path.resolve(pathname); return new Promise((resolve, reject) =&gt; &#123; fs.readFile(pathname, encoding, (err, result) =&gt; &#123; if (err !== null) &#123; reject(err); return; &#125; resolve(result); &#125;); &#125;);&#125; */module.exports = exportsOBJ;]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>%2F2019%2F09%2F23%2F%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2.html</url>
-    <content type="text"><![CDATA[**layout: posttitle: 第一篇博客author: Zerocategories: develop testtags: linux os java pythondate: 2019-9-23 17:30:00 第一次见面你好，同学！欢迎你使用基于hexo搭建的next主题的博客系统。 关于Markdown当你能够正常访问这个页面时，相信你已经知道以后写博客文章是基于Markdown语法的，请熟练使用他。 祝你好运]]></content>
+    <title><![CDATA[第一篇博客]]></title>
+    <url>%2F2018%2F11%2F30%2F%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2.html</url>
+    <content type="text"><![CDATA[第一次见面你好，同学！欢迎你使用基于hexo搭建的next主题的博客系统。 关于Markdown当你能够正常访问这个页面时，相信你已经知道以后写博客文章是基于Markdown语法的，请熟练使用他。 祝你好运]]></content>
+      <categories>
+        <category>develop</category>
+        <category>test</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>os</tag>
+        <tag>java</tag>
+        <tag>python</tag>
+      </tags>
   </entry>
 </search>

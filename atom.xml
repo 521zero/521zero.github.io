@@ -39,11 +39,11 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="https://521zero.github.io/2019/09/23/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2.html"/>
-    <id>https://521zero.github.io/2019/09/23/第一篇博客.html</id>
-    <published>2019-09-23T07:34:04.330Z</published>
-    <updated>2019-09-23T15:32:20.019Z</updated>
+    <title>第一篇博客</title>
+    <link href="https://521zero.github.io/2018/11/30/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2.html"/>
+    <id>https://521zero.github.io/2018/11/30/第一篇博客.html</id>
+    <published>2018-11-30T09:30:00.000Z</published>
+    <updated>2019-09-23T15:54:05.988Z</updated>
     
     <summary type="html">
     
@@ -57,6 +57,18 @@
     
     </summary>
     
+      <category term="develop" scheme="https://521zero.github.io/categories/develop/"/>
+    
+      <category term="test" scheme="https://521zero.github.io/categories/develop/test/"/>
+    
+    
+      <category term="linux" scheme="https://521zero.github.io/tags/linux/"/>
+    
+      <category term="os" scheme="https://521zero.github.io/tags/os/"/>
+    
+      <category term="java" scheme="https://521zero.github.io/tags/java/"/>
+    
+      <category term="python" scheme="https://521zero.github.io/tags/python/"/>
     
   </entry>
   
