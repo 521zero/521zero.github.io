@@ -967,8 +967,8 @@ pre .javascript .function {
 }
 .btn:hover {
   border-color: #222;
-  color: #222;
-  background: #fff;
+  color: #fff;
+  background: #222;
 }
 .btn +.btn {
   margin: 0 0 8px 8px;
@@ -1812,7 +1812,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff2ed7;
+  background: #ff8171;
 }
 .feed-link,
 .chat {
@@ -2670,15 +2670,12 @@ hr {
 }
 .post-button {
   margin-top: 20px;
-  text-align: left;
+  text-align: center;
 }
 .post-button a {
-  padding: 0;
   font-size: 14px;
   background: none;
-  border: none;
-  border-bottom: 2px solid #666;
-  transition-property: border;
+  border-bottom: 2px solid rgba(0,0,0,0.4);
 }
 @media (max-width: 767px) {
   .post-button a {
@@ -2687,7 +2684,7 @@ hr {
 }
 @media (min-width: 1200px) {
   .post-button a {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 .post-button a:hover {
@@ -2697,9 +2694,8 @@ hr {
   display: inline-block;
 }
 .btn {
-  padding: 0 10px;
   border-width: 2px;
-  border-radius: 0;
+  border-radius: 4px;
 }
 .headband {
   display: none;
